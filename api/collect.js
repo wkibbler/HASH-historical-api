@@ -17,7 +17,7 @@ month[9] = "October";
 month[10] = "November";
 month[11] = "December";
 var currentMonth = month[d.getMonth()];
-var file = fs.readFileSync("../db/price.json", 'utf8');
+var file = fs.readFileSync(`${__dirname}/../db/price.json`, 'utf8');
 var json = JSON.parse(file)
 axios({
 method:'get',
